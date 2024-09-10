@@ -1,0 +1,27 @@
+:root{
+    --Color-Primario: #9C27B0;
+    --Color-Primario0scuro: #89119D;
+    --Color-Secundario: #FFCE00;
+    --Color-Secundario0scuro: rgb(233,287,2);
+    --Color-Blanco: #FFF;
+    --Color-Negro: #000;
+
+    --FuentePrincipal: "Staatliches", cursive;
+}
+
+/* GLOBALES */
+
+body{
+    font-family: var(--FuentePrincipal);
+    background: var(--Color-Primario);
+    line-height: 1.5;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+

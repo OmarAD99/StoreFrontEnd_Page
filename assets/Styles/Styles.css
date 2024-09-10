@@ -1,0 +1,159 @@
+@media(min-width: 768px){
+
+    /* Header */
+
+    .Header{
+        text-align: center;
+        padding-top: 15px;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+    }
+
+    /* Header - Logotipo */
+
+    .Header .Logotipo{
+        margin-left: 40px;
+    }
+
+    .Header .Logotipo img{
+        width: 150px;
+    }
+
+    /* Header - Navegation Big */
+
+    .Header .Navegation-Big ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: var(--Color-Primario0scuro);
+    }
+
+    .Header .Navegation-Big .ListNavegation-Big li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Header .Navegation-Big .ListNavegation-Big .Navegation-List-Big a{
+        font-size: 20px;
+        color: var(--Color-Secundario);
+    }
+
+    /* Header - Navegation Little */
+
+    .Header .Navegation-Little{
+        display: none;
+    }
+
+}
+
+@media(max-width: 767px){
+
+    /* Header */
+
+    .Header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        border: 2px solid red;
+    }
+
+    /* Header - Logotipo */
+
+    .Header .Logotipo img{
+        width: 120px;
+    }
+
+    /* Header - Navegation Little */
+
+    .Header .Navegation-Little{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header .Navegation-Little .Label-Main{
+        position: relative;
+        cursor: pointer;
+    }
+
+    .Header .Navegation-Little .Label-Main #Spn-1, #Spn-2, #Spn-3{
+        position: absolute;
+        content: '';
+        background: var(--Color-Secundario);
+        top: -6px;
+        height: 4px;
+        width: 20px;
+        border-radius: 75px;
+        transition: all 400ms linear;
+    }
+
+    .Header .Navegation-Little .Label-Main #Spn-2{
+        top: -1px;
+    }
+
+    .Header .Navegation-Little .Label-Main #Spn-3{
+        top: 4px;
+    }
+
+    .Header .Navegation-Little #Btn-Main{
+        display: none;
+    }
+
+    .Header .Navegation-Little #Btn-Main:checked ~ .Label-Main #Spn-1{
+        transform: rotate(140deg);
+        top: -1px;
+    }
+
+    .Header .Navegation-Little #Btn-Main:checked ~ .Label-Main #Spn-2{
+        opacity: 0;
+    }
+
+    .Header .Navegation-Little #Btn-Main:checked ~ .Label-Main #Spn-3{
+        transform: rotate(-140deg);
+        top: -1px;
+    }
+
+    .Header .Navegation-Little .Label-Navegation{
+        display: none;
+        position: absolute;
+        background: var(--Color-Secundario);
+        top: 83px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .Header .Navegation-Little .Label-Navegation ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Header .Navegation-Little .Label-Navegation .ListNavegation-Little li{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .Header .Navegation-Little .Label-Navegation .ListNavegation-Little .Navegation-List-Little a{
+        font-size: 15px;
+        color: var(--Color-Primario0scuro);
+    }
+
+    .Header .Navegation-Little #Btn-Main:checked ~ .Label-Navegation{
+        display: block;
+    }
+
+    /* Header - Navegation Big */
+
+    .Header .Navegation-Big{
+        display: none;
+    }
+
+}
